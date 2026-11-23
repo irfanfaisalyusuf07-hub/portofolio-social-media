@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Putri — Social Media Specialist & Creative Content</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            900: '#831843',
+                        },
+                        dark: {
+                            900: '#09090b',
+                            800: '#18181b',
+                            700: '#27272a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 flex items-center justify-center text-white font-display font-bold text-lg shadow-lg shadow-pink-500/20 group-hover:scale-105 transition-transform">
+                        N
+                    </div>
+                    <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white">
+                        Nadia<span class="text-pink-500">.social</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                    <a href="#tentang" class="hover:text-white transition-colors">Tentang</a>
+                    <a href="#layanan" class="hover:text-white transition-colors">Keahlian</a>
+                    <a href="#portofolio" class="hover:text-white transition-colors">Portofolio</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Button -->
+                <div class="flex items-center gap-3">
+                    <a href="#kontak" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-semibold text-sm hover:bg-zinc-200 transition-all shadow-md">
+                        <span>Profil & Kontak</span>
+                        <i class="fa-solid fa-user text-xs"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden p-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#tentang" class="block px-4 py-3 rounded-xl text-zinc-300 hover:bg-zinc-800 hover:text-white font-medium">Tentang Saya</a>
+            <a href="#layanan" class="block px-4 py-3 rounded-xl text-zinc-300 hover:bg-zinc-800 hover:text-white font-medium">Keahlian</a>
+            <a href="#portofolio" class="block px-4 py-3 rounded-xl text-zinc-300 hover:bg-zinc-800 hover:text-white font-medium">Galeri Karya</a>
+            <div class="pt-2">
+                <a href="#kontak" class="block w-full text-center px-5 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold">
+                    Info Kontak
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="tentang" class="relative pt-28 pb-20 sm:pt-36 sm:pb-28 overflow-hidden">
+        <!-- Decorative Background Glow -->
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[320px] sm:w-[600px] h-[320px] sm:h-[400px] bg-pink-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Text -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs sm:text-sm font-medium text-pink-400">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+                        Social Media Specialist & Creative Content
+                    </div>
+
+                    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.15]">
+                        Mengubah <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-400 to-indigo-400">Perhatian</span> Menjadi Komunitas & Konversi.
+                    </h1>
+
+                    <p class="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Halo! Saya <strong class="text-zinc-200">Nadia Putri</strong>, Social Media Specialist dengan fokus pada produksi <span class="text-zinc-200">Short-Form Video (Reels & TikTok)</span>, <span class="text-zinc-200">Fotografi Produk</span>, dan <span class="text-zinc-200">Desain Grafis Visual</span> yang menghentikan <em>scroll</em> audiens.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#portofolio" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold text-sm sm:text-base shadow-lg shadow-pink-500/25 transition-all flex items-center justify-center gap-2">
+                            <span>Lihat Karya Saya</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#kontak" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-semibold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-id-card text-pink-400"></i>
+                            <span>Terhubung Dengan Saya</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-5 text-zinc-400">
+                        <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Platform:</span>
+                        <a href="#portofolio" aria-label="Instagram" class="hover:text-pink-400 transition-colors text-xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-emerald-400 transition-colors text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Profile Card / Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm">
+                        <!-- Main Photo Container -->
+                        <div class="relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+                                 onerror="this.src='https://placehold.co/600x750/18181b/ec4899?text=Nadia+Putri'"
+                                 alt="Foto Profil Nadia Putri"
+                                 class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+                            <div class="absolute bottom-5 left-5 right-5">
+                                <p class="text-xs text-pink-400 font-semibold uppercase tracking-wider">Content Creator & Strategist</p>
+                                <h2 class="font-display font-bold text-xl text-white">Video • Foto • Desain Grafis</h2>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -right-3 sm:-right-6 bottom-24 bg-zinc-900/95 backdrop-blur-md border border-zinc-700/80 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-400">Fokus Kreatif</p>
+                                <p class="font-display font-bold text-base text-white">Visual & Storytelling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Pilar Konten Section -->
+    <section id="layanan" class="py-16 sm:py-24 bg-zinc-900/40 border-y border-zinc-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+                <span class="text-pink-500 font-semibold text-sm uppercase tracking-wider">Spesialisasi Utama</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">3 Pilar Kreatif Media Sosial</h2>
+                <p class="text-zinc-400 text-sm sm:text-base">
+                    Kombinasi strategi algoritma dan eksekusi visual yang konsisten untuk membangun identitas brand Anda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Card 1: Video -->
+                <div class="p-7 rounded-3xl bg-zinc-900 border border-zinc-800 hover:border-pink-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2.5">Short-Form Video</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+                        Produksi video vertikal (Reels, TikTok, Shorts) mulai dari riset hook, scriptwriting, pengambilan gambar, hingga editing dinamis dengan retention tinggi.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs text-zinc-300">
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">CapCut Pro</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Premiere Pro</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Storytelling</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Fotografi -->
+                <div class="p-7 rounded-3xl bg-zinc-900 border border-zinc-800 hover:border-purple-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2.5">Fotografi Konten & Produk</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+                        Pemotretan produk komersial, flatlay, lifestyle, hingga foto F&B dengan pencahayaan estetis dan color grading yang sesuai karakter merek.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs text-zinc-300">
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Lightroom</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Product Styling</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Studio & Outdoor</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Desain Grafis -->
+                <div class="p-7 rounded-3xl bg-zinc-900 border border-zinc-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-white mb-2.5">Desain Grafis & Carousel</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+                        Perancangan microblog carousel edukatif, poster promosi kampanye, highlight icon, serta penyusunan grid feed Instagram yang harmonis.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs text-zinc-300">
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Illustrator</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Photoshop</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-zinc-800">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="portofolio" class="py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header & Filter Tabs -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div class="space-y-2">
+                    <span class="text-pink-500 font-semibold text-sm uppercase tracking-wider">Showcase Karya</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">Portofolio Terpilih</h2>
+                    <p class="text-zinc-400 text-sm sm:text-base">Pilih kategori untuk melihat hasil produksi video, fotografi, dan desain grafis.</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div id="filter-container" class="flex flex-wrap gap-2 bg-zinc-900 p-1.5 rounded-2xl border border-zinc-800 self-start md:self-auto">
+                    <button data-filter="all" class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow">
+                        Semua Karya (9)
+                    </button>
+                    <button data-filter="video" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-400 hover:text-white">
+                        <i class="fa-solid fa-video mr-1.5"></i>Video
+                    </button>
+                    <button data-filter="foto" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-400 hover:text-white">
+                        <i class="fa-solid fa-camera mr-1.5"></i>Foto
+                    </button>
+                    <button data-filter="desain" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all text-zinc-400 hover:text-white">
+                        <i class="fa-solid fa-palette mr-1.5"></i>Desain Grafis
+                    </button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Item akan dirender melalui JavaScript agar interaktif & bersih -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="kontak" class="py-20 sm:py-28 border-t border-zinc-800/80 bg-zinc-900/30">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-pink-950/30 border border-zinc-800 p-8 sm:p-12 lg:p-16 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-6 space-y-5">
+                        <span class="inline-block px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                            Mari Bekerja Sama
+                        </span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white leading-tight">
+                            Siap Meningkatkan Performa Sosial Media Brand Anda?
+                        </h2>
+                        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                            Kirimkan detail kebutuhan konten Anda (manajemen akun bulanan, produksi video Reels, sesi foto produk, atau paket desain grafis).
+                        </p>
+
+                        <div class="space-y-3 pt-2 text-sm">
+                            <div class="flex items-center gap-3 text-zinc-300">
+                                <div class="w-9 h-9 rounded-xl bg-zinc-800 flex items-center justify-center text-pink-400">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <span id="email-text">halo@nadiaputri.social</span>
+    <!-- Info Kontak & Sosial Media Section -->
+    <section id="kontak" class="py-20 sm:py-24 border-t border-zinc-800/80 bg-zinc-900/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-pink-950/30 border border-zinc-800 p-8 sm:p-12 shadow-2xl text-center space-y-6">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Profil & Kontak
+                </span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-white leading-tight">
+                    Kenali Saya Lebih Dekat
+                </h2>
+                <p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                    Terima kasih telah mengunjungi galeri portofolio saya. Anda dapat melihat aktivitas kreatif terbaru atau menyapa melalui kanal resmi di bawah ini.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 text-sm">
+                    <div class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-zinc-950/80 border border-zinc-800 text-zinc-300">
+                        <i class="fa-regular fa-envelope text-pink-400 text-base"></i>
+                        <span id="email-text">halo@nadiaputri.social</span>
+                        <button onclick="copyEmail()" class="ml-2 px-3 py-1 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs text-zinc-200 transition-colors">
+                            Salin
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-zinc-950/80 border border-zinc-800 text-zinc-300">
+                        <i class="fa-solid fa-location-dot text-purple-400 text-base"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+
+                <!-- Tautan Media Sosial -->
+                <div class="pt-4 flex items-center justify-center gap-4">
+                    <a href="#portofolio" aria-label="Instagram" class="w-11 h-11 rounded-full bg-zinc-800/80 hover:bg-pink-500 text-zinc-300 hover:text-white flex items-center justify-center transition-all text-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-11 h-11 rounded-full bg-zinc-800/80 hover:bg-emerald-500 text-zinc-300 hover:text-white flex items-center justify-center transition-all text-lg">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 py-8 text-center text-xs sm:text-sm text-zinc-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Nadia Putri — Social Media Specialist Portfolio.</p>
+            <div class="flex items-center gap-6">
+                <a href="#tentang" class="hover:text-zinc-300">Tentang</a>
+                <a href="#portofolio" class="hover:text-zinc-300">Portofolio</a>
+                <a href="#kontak" class="hover:text-zinc-300">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail Karya (Lightbox & Video Preview) -->
+    <div id="portfolio-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
+        <div class="relative w-full max-w-4xl bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button id="close-modal" aria-label="Tutup Pratinjau" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-zinc-950/80 border border-zinc-700 text-white hover:bg-pink-500 transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Media Preview Area -->
+            <div id="modal-media" class="w-full md:w-3/5 bg-zinc-950 flex items-center justify-center overflow-hidden min-h-[280px] sm:min-h-[380px]">
+                <!-- Konten gambar/video disisipkan lewat JS -->
+            </div>
+
+            <!-- Info & Metrik Area -->
+            <div class="w-full md:w-2/5 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span id="modal-category" class="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-pink-500/20 text-pink-400">
+                            Kategori
+                        </span>
+                        <span id="modal-platform" class="text-xs text-zinc-400 font-medium">Instagram Reels</span>
+                    </div>
+
+                    <h3 id="modal-title" class="font-display font-bold text-xl sm:text-2xl text-white">Judul Proyek</h3>
+                    <p id="modal-desc" class="text-zinc-400 text-sm leading-relaxed">Deskripsi detail karya dan proses kreatif.</p>
+
+                    <div class="pt-2 border-t border-zinc-800">
+                        <p class="text-xs font-semibold uppercase text-zinc-500 mb-1">Klien / Brand</p>
+                        <p id="modal-client" class="text-sm font-medium text-zinc-200">Nama Klien</p>
+                    </div>
+
+                    <div class="pt-2">
+                        <p class="text-xs font-semibold uppercase text-zinc-500 mb-2">Tools & Software</p>
+                        <div id="modal-tools" class="flex flex-wrap gap-2">
+                            <!-- Tools diisi lewat JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 mt-6 border-t border-zinc-800">
+                    <button onclick="closeModal()" class="w-full text-center py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-sm transition-colors">
+                        Tutup Pratinjau
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification (Pengganti alert) -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-zinc-900 border border-pink-500/50 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <span id="toast-message" class="text-sm font-medium">Pesan berhasil dikirim!</span>
+    </div>
+
+    <script>
+        // Data Portofolio (Video, Foto, dan Desain Grafis tanpa metrik/viewers)
+        const portfolioData = [
+            {
+                id: 1,
+                category: 'video',
+                categoryLabel: 'Video',
+                platform: 'Instagram Reels & TikTok',
+                title: 'Kampanye Peluncuran Kopi Cold Brew',
+                client: 'Kopi Senja Roastery',
+                thumbnail: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80',
+                videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-pouring-milk-into-a-glass-of-iced-coffee-43375-large.mp4',
+                duration: '0:24',
+                description: 'Video transisi cepat dengan efek ASMR menuang kopi dan es batu untuk membangun suasana segar dalam 3 detik pertama (hook visual).',
+                tools: ['CapCut Pro', 'Sony A7C', 'Color Grading']
+            },
+            {
+                id: 2,
+                category: 'foto',
+                categoryLabel: 'Foto',
+                platform: 'Instagram Feed & Katalog',
+                title: 'Editorial Fotografi Skincare Organik',
+                client: 'Lumina Botanical',
+                thumbnail: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80',
+                description: 'Konsep fotografi produk minimalis menggunakan pencahayaan alami (hard shadow) dan properti batu alam untuk menonjolkan kesan bersih dan premium.',
+                tools: ['Adobe Lightroom', 'Photoshop', 'Natural Light']
+            },
+            {
+                id: 3,
+                category: 'desain',
+                categoryLabel: 'Desain Grafis',
+                platform: 'Instagram Carousel (8 Slide)',
+                title: 'Microblog Edukasi Finansial Gen-Z',
+                client: 'DompetPintar ID',
+                thumbnail: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
+                description: 'Desain carousel interaktif dengan tipografi tebal, ilustrasi 3D ringan, dan alur membaca berkesinambungan antar slide.',
+                tools: ['Figma', 'Adobe Illustrator']
+            },
+            {
+                id: 4,
+                category: 'video',
+                categoryLabel: 'Video',
+                platform: 'TikTok & Reels',
+                title: 'Lookbook Streetwear Koleksi Musim Panas',
+                client: 'UrbanVibe Apparel',
+                thumbnail: 'https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=800&q=80',
+                videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-woman-walking-in-a-city-street-4357-large.mp4',
+                duration: '0:18',
+                description: 'Video transisi outfit mengikuti ketukan musik dengan dynamic zoom dan teks keterangan bahan serta potongan pakaian.',
+                tools: ['Premiere Pro', 'Gimbal Stabilizer']
+            },
+            {
+                id: 5,
+                category: 'foto',
+                categoryLabel: 'Foto',
+                platform: 'Instagram & Menu Digital',
+                title: 'Food Photography Artisan Pastry & Croissant',
+                client: 'Maison de Crème',
+                thumbnail: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80',
+                description: 'Pemotretan tekstur renyah pastry dengan teknik close-up macro dan warm color palette untuk menggugah selera pelanggan.',
+                tools: ['Lightroom Classic', 'Macro Lens 90mm']
+            },
+            {
+                id: 6,
+                category: 'desain',
+                categoryLabel: 'Desain Grafis',
+                platform: 'Instagram Story & Poster Promo',
+                title: 'Key Visual Kampanye 11.11 Mega Sale',
+                client: 'GlowUp Cosmetics',
+                thumbnail: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
+                description: 'Rangkaian materi visual promosi meliputi template Instagram Story interaktif, banner katalog, dan feed announcement.',
+                tools: ['Adobe Photoshop', 'Illustrator']
+            },
+            {
+                id: 7,
+                category: 'video',
+                categoryLabel: 'Video',
+                platform: 'YouTube Shorts & Reels',
+                title: 'Behind The Scenes: Proses Pembuatan Keramik',
+                client: 'TanahLiat Studio',
+                thumbnail: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80',
+                videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-potter-shaping-clay-on-a-wheel-42934-large.mp4',
+                duration: '0:32',
+                description: 'Video storytelling menenangkan yang memperlihatkan ketelitian pengrajin lokal, membangun ikatan emosional antara audiens dan nilai produk.',
+                tools: ['CapCut Pro', 'Voice Over', 'Colorist']
+            },
+            {
+                id: 8,
+                category: 'foto',
+                categoryLabel: 'Foto',
+                platform: 'Instagram Campaign',
+                title: 'Lifestyle & Tech Gadget Flatlay',
+                client: 'NusaTech Audio',
+                thumbnail: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
+                description: 'Foto produk headphone nirkabel dengan konsep desk-setup modern bernuansa moody neon untuk target pasar pekerja kreatif.',
+                tools: ['Photoshop', 'RGB Tube Light']
+            },
+            {
+                id: 9,
+                category: 'desain',
+                categoryLabel: 'Desain Grafis',
+                platform: 'Instagram Grid & Brand Refresh',
+                title: 'Peremajaan Identitas Visual & Grid Feed',
+                client: 'SehatJiwa Yoga Studio',
+                thumbnail: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80',
+                description: 'Penyusunan sistem desain media sosial lengkap: palet warna pastel menenangkan, template jadwal kelas mingguan, dan ikon highlight Instagram.',
+                tools: ['Figma', 'Adobe Illustrator']
+            }
+        ];
+
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const modal = document.getElementById('portfolio-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+
+        // Render Kartu Portofolio
+        function renderPortfolio(filter = 'all') {
+            portfolioGrid.innerHTML = '';
+            const filtered = filter === 'all'
+                ? portfolioData
+                : portfolioData.filter(item => item.category === filter);
+
+            filtered.forEach(item => {
+                // Badge ikon berdasarkan kategori
+                let badgeIcon = 'fa-palette';
+                let badgeColor = 'bg-indigo-500/90 text-white';
+                if (item.category === 'video') {
+                    badgeIcon = 'fa-play';
+                    badgeColor = 'bg-pink-500/90 text-white';
+                } else if (item.category === 'foto') {
+                    badgeIcon = 'fa-camera';
+                    badgeColor = 'bg-purple-500/90 text-white';
+                }
+
+                const card = document.createElement('article');
+                card.className = 'group relative rounded-3xl bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-all duration-300 cursor-pointer flex flex-col';
+                card.onclick = () => openModal(item);
+
+                card.innerHTML = `
+                    <div class="relative aspect-[4/3] overflow-hidden bg-zinc-950">
+                        <img src="${item.thumbnail}"
+                             onerror="this.src='https://placehold.co/800x600/18181b/ec4899?text=${encodeURIComponent(item.title)}'"
+                             alt="${item.title}"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+
+                        <!-- Category Pill -->
+                        <div class="absolute top-4 left-4 flex items-center gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold ${badgeColor} backdrop-blur-md shadow-md flex items-center gap-1.5">
+                                <i class="fa-solid ${badgeIcon} text-[10px]"></i>
+                                ${item.categoryLabel}
+                            </span>
+                            ${item.duration ? `<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-black/70 text-zinc-200 backdrop-blur-md">${item.duration}</span>` : ''}
+                        </div>
+
+                        <!-- Center Play Button khusus Video -->
+                        ${item.category === 'video' ? `
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-pink-500 group-hover:border-pink-500 transition-all shadow-xl">
+                                    <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                                </div>
+                            </div>
+                        ` : ''}
+
+                        <!-- Bottom Quick Stat -->
+                        <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                            <span class="font-medium text-pink-400">${item.client}</span>
+                        <!-- Bottom Client Info (Tanpa Viewers/Stats) -->
+                        <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                            <span class="font-medium text-pink-400">${item.client}</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <p class="text-xs text-zinc-500 mb-1">${item.platform}</p>
+                            <h3 class="font-display font-bold text-lg text-white group-hover:text-pink-400 transition-colors line-clamp-2">
+                                ${item.title}
+                            </h3>
+                        </div>
+                        <div class="flex items-center justify-between pt-3 border-t border-zinc-800/80 text-xs text-zinc-400">
+                            <span>Klik untuk detail karya</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform text-pink-400"></i>
+                        </div>
+                    </div>
+                `;
+                portfolioGrid.appendChild(card);
+            });
+        }
+
+        // Event Filter Tabs
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-gradient-to-r', 'from-pink-500', 'to-purple-600', 'text-white', 'shadow');
+                    b.classList.add('text-zinc-400');
+                });
+                btn.classList.add('bg-gradient-to-r', 'from-pink-500', 'to-purple-600', 'text-white', 'shadow');
+                btn.classList.remove('text-zinc-400');
+
+                const filterValue = btn.getAttribute('data-filter');
+                renderPortfolio(filterValue);
+            });
+        });
+
+        // Buka Modal Pratinjau
+        function openModal(item) {
+            const mediaContainer = document.getElementById('modal-media');
+            document.getElementById('modal-category').textContent = item.categoryLabel;
+            document.getElementById('modal-platform').textContent = item.platform;
+            document.getElementById('modal-title').textContent = item.title;
+            document.getElementById('modal-desc').textContent = item.description;
+            document.getElementById('modal-client').textContent = item.client;
+
+            // Render Media (Video atau Gambar)
+            if (item.category === 'video' && item.videoUrl) {
+                mediaContainer.innerHTML = `
+                    <video controls autoplay muted loop playsinline poster="${item.thumbnail}" class="w-full h-full max-h-[75vh] object-contain bg-black">
+                        <source src="${item.videoUrl}" type="video/mp4">
+                        Browser Anda tidak mendukung pemutar video.
+                    </video>
+                `;
+            } else {
+                mediaContainer.innerHTML = `
+                    <img src="${item.thumbnail}"
+                         onerror="this.src='https://placehold.co/800x600/18181b/ec4899?text=${encodeURIComponent(item.title)}'"
+                         alt="${item.title}"
+                         class="w-full h-full max-h-[75vh] object-contain">
+                `;
+            }
+
+            // Render Tools
+            const toolsContainer = document.getElementById('modal-tools');
+            toolsContainer.innerHTML = item.tools.map(t => `
+                <span class="px-2.5 py-1 rounded-lg bg-zinc-800 text-xs text-zinc-300">${t}</span>
+            `).join('');
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Tutup Modal
+        function closeModal() {
+            const mediaContainer = document.getElementById('modal-media');
+            mediaContainer.innerHTML = ''; // Hentikan pemutaran video saat ditutup
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Toast Notification Helper
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').textContent = message;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3500);
+        }
+
+        // Salin Email menggunakan execCommand sesuai kompatibilitas iframe
+        function copyEmail() {
+            const email = document.getElementById('email-text').textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast('Alamat email berhasil disalin!');
+        }
+
+        // Inisialisasi awal galeri
+        renderPortfolio('all');
+    </script>
+</body>
+</html>
